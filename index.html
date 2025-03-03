@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Dev Board|Home</title>
+</head>
+<body class="bg-slate-100">
+    <section class="max-w-[1380px] mx-auto px-4 py-4">
+        <!-- header devBoard -->
+        <header class="mb-4">
+            <nav class="bg-white py-4 px-6 rounded-xl flex items-center justify-between">
+                <!-- header logo -->
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="Dev Board logo">
+                    <h1><span class="text-3xl text-black font-light">Dev</span><span class="text-black font-semibold text-3xl">Board</span></h1>
+                </div>
+                <!-- checkbox and theme button -->
+                <div class="flex gap-6 items-center">
+                    <div class="flex items-center gap-1 px-3 py-1 bg-slate-100 rounded-2xl">
+                        <img src="assets/checkbox.png" alt="checkbox">
+                        <h2 id="task-completed" class="text-black text-2xl font-bold">23</h2>
+                    </div>
+                    <!-- theme button -->
+                    <div class="p-2 rounded-full bg-slate-100 hover:cursor-pointer hover:bg-slate-200">
+                        <img src="assets/theme-btn.png" alt="theme button">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- devBoard section -->
+    <section class="grid dev-grid gap-4">
+        <!-- task assigned section -->
+        <section class="bg-white rounded-xl py-6 px-5">
+            <div class="grid task-manager-grid gap-4">
+                <!-- task assigned card -->
+                <div class="bg-slate-100 rounded-lg flex items-center justify-center gap-5">
+                    <img src="assets/checkbox.png" alt="checkbox" class="w-6">
+                    <div>
+                        <p class="text-sm text-gray-500">Task Assigned</p>
+                        <h2 class="text-[22px] font-bold">06</h2>
+                    </div>
+                </div>
+
+                <!-- Discover new card -->
+                <div class="flex items-center rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-300 p-4 justify-center hover:cursor-pointer">
+                    <img src="assets/board.png" alt="calender">
+                    <p class="text-white text-xl">Discover Something New Today!</p>
+                </div>
+                <!-- current date card -->
+                <div class="bg-slate-100 rounded-lg flex items-center justify-center gap-5">
+                    <img src="assets/calender.png" alt="checkbox" class="w-6">
+                    <div>
+                        <p class=" text-gray-500">Wed,</p>
+                        <h2 class="font-bold">Jul 28, 2025</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tasks section -->
+            <section class="mt-4 grid grid-cols-3 gap-4">
+                <!-- card1 -->
+                 <div class="bg-slate-100 p-5 rounded-lg">
+                    <div class="dashed-border mb-4">
+                        <h2 class="text-sm bg-white rounded-lg px-2 py-1 w-fit mb-2">ShopEase</h2>
+                        <h1 class="text-lg mb-2">Fix Mobile Button Issue</h1>
+                        <p class="text-ellipsis overflow-hidden whitespace-nowrap text-sm text-gray-500 px-3 py-2 bg-white rounded-lg mb-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Deadline</p>
+                                <p class="text-sm">21 March 2025</p>
+                            </div>
+                        <button disabled class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                    </div>
+        
+                 </div>
+                <!-- card2 -->
+                 <div class="bg-slate-100 p-5 rounded-lg">
+                    <div class="dashed-border mb-4">
+                        <h2 class="text-sm bg-white rounded-lg px-2 py-1 w-fit mb-2">CloudSync</h2>
+                        <h1 class="text-lg mb-2">Add Dark Mode</h1>
+                        <p class="text-ellipsis overflow-hidden whitespace-nowrap text-sm text-gray-500 px-3 py-2 bg-white rounded-lg mb-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Deadline</p>
+                                <p class="text-sm">21 March 2025</p>
+                            </div>
+                        <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                    </div>
+        
+                 </div>
+                <!-- card3 -->
+                 <div class="bg-slate-100 p-5 rounded-lg">
+                    <div class="dashed-border mb-4">
+                        <h2 class="text-sm bg-white rounded-lg px-2 py-1 w-fit mb-2">SwiftPay</h2>
+                        <h1 class="text-lg mb-2">Optimize Home Page</h1>
+                        <p class="text-ellipsis overflow-hidden whitespace-nowrap text-sm text-gray-500 px-3 py-2 bg-white rounded-lg mb-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Deadline</p>
+                                <p class="text-sm">21 March 2025</p>
+                            </div>
+                        <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                    </div>
+        
+                 </div>
+                <!-- card4 -->
+                 <div class="bg-slate-100 p-5 rounded-lg">
+                    <div class="dashed-border mb-4">
+                        <h2 class="text-sm bg-white rounded-lg px-2 py-1 w-fit mb-2">Meta</h2>
+                        <h1 class="text-lg mb-2">Add New Emoji 🤲 </h1>
+                        <p class="text-ellipsis overflow-hidden whitespace-nowrap text-sm text-gray-500 px-3 py-2 bg-white rounded-lg mb-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Deadline</p>
+                                <p class="text-sm">21 March 2025</p>
+                            </div>
+                        <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                    </div>
+        
+                 </div>
+                <!-- card5 -->
+                 <div class="bg-slate-100 p-5 rounded-lg">
+                    <div class="dashed-border mb-4">
+                        <h2 class="text-sm bg-white rounded-lg px-2 py-1 w-fit mb-2">Google LLC</h2>
+                        <h1 class="text-lg mb-2">Integrate OpenAI API</h1>
+                        <p class="text-ellipsis overflow-hidden whitespace-nowrap text-sm text-gray-500 px-3 py-2 bg-white rounded-lg mb-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Deadline</p>
+                                <p class="text-sm">21 March 2025</p>
+                            </div>
+                        <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                    </div>
+        
+                 </div>
+                <!-- card6 -->
+                 <div class="bg-slate-100 p-5 rounded-lg">
+                    <div class="dashed-border mb-4">
+                        <h2 class="text-sm bg-white rounded-lg px-2 py-1 w-fit mb-2">GlassDoor</h2>
+                        <h1 class="text-lg mb-2">Improve Job Searching</h1>
+                        <p class="text-ellipsis overflow-hidden whitespace-nowrap text-sm text-gray-500 px-3 py-2 bg-white rounded-lg mb-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Deadline</p>
+                                <p class="text-sm">21 March 2025</p>
+                            </div>
+                        <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                    </div>
+        
+                 </div>
+        
+            </section>
+            
+
+        </section>
+
+        <!-- activity log section -->
+        <section class="bg-white rounded-xl h-full px-4 py-6">
+            <div class="flex gap-2 items-center justify-center mb-3">
+                <img src="assets/activity.png" alt="activity">
+                <h2 class="text-lg">Activity Log</h2>
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Clear History</button>
+            </div>
+            <div id="history-container">
+
+            </div>
+
+        </section>
+    </section>
+
+    </section>
+
+    
+    
+</body>
+</html>
