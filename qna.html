@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Dev Board-Blogs</title>
+</head>
+<body class="bg-slate-100" id="body">
+    <section class="max-w-[1380px] mx-auto px-4 py-4">
+        <!-- header devBoard -->
+        <header class="mb-4">
+            <nav class="bg-white py-4 px-6 rounded-xl flex items-center justify-between">
+                <!-- header logo -->
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="Dev Board logo">
+                    <h1><span class="text-3xl text-black font-light">Dev</span><span class="text-black font-semibold text-3xl">Board</span></h1>
+                </div>
+                <!-- back to board button -->
+                <div id="back-to-board-btn">
+                    <a href="index.html"><button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Back to Board</button></a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- blogs section -->
+        <div class="my-4">
+            <h1 class="text-center font-semibold text-3xl text-black">Blogs</h1>
+        </div>
+
+        <!-- q1 -->
+        <section class="bg-white rounded-xl h-full px-6 py-6 mb-4">
+            <div class="pb-2 dashed-border mb-3">
+                <h2 class="text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h2>
+            </div>
+            <p class="font-light text-gray-600 mb-2">
+                We mainly use 5 ways to select an element in the DOM. They are:</p>
+                <ol class="font-light text-gray-600 ml-3" type="1">
+                    <li>1. By using getElementById("id")</li>
+                    <li>2. By using getElementsByClassName("class")</li>
+                    <li>3. By using getElementsByTagName("tag")</li>
+                    <li>4. By using querySelector("css-selector")</li>
+                    <li>5. By using querySelectorAll("css-selector")</li>
+                </ol>
+            
+
+        </section>
+
+        <!-- q2 -->
+        <section class="bg-white rounded-xl h-full px-6 py-6 mb-4">
+            <div class="pb-2 dashed-border mb-3">
+                <h2 class="text-xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+            </div>
+            <p class="font-light text-gray-600 mb-2">Differences between innerHTML, innerText, textContent:</p>
+            <ol class="font-light text-gray-600 ml-3 list-decimal" type="1">
+                <li>innerHTML: It returns the HTML content of an element (with hidden elements). <br>(I have used it while creating an element to append to it's parent in this assignment.)</li>
+                <li>innerText: It returns the text content of an element (without the texts of hidden elements). <br>(I have used it while getting and setting the inner text of an element in this assignment.)</li>
+                <li>textContent: It also returns the text content of an element (with the texts of hidden elements). <br>(I haven't used it in this assignment.)</li>
+
+            </ol>
+
+        </section>
+
+        <!-- q3 -->
+        <section class="bg-white rounded-xl h-full px-6 py-6 mb-4">
+            <div class="pb-2 dashed-border mb-3">
+                <h2 class="text-xl font-medium">Question-3: What is event delegation in the DOM?</h2>
+            </div>
+            <p class="font-light text-gray-600">Event delegation is an efficient way to handle events if there are too many similar elements under the same parent node. In this case, we add an event lister to the parent node and try find out the target element. And then we execute the further procedure.</p>
+            
+        </section>
+
+        <!-- q4 -->
+        <section class="bg-white rounded-xl h-full px-6 py-6 mb-4">
+            <div class="pb-2 dashed-border mb-3">
+                <h2 class="text-xl font-medium">Question-4: What is event bubbling in the DOM?</h2>
+            </div>
+            <p class="font-light text-gray-600">Event bubbling is when an event, triggered by a child element, propagates through it's parents to the furthest parent that has an event listener. In this case, an event can get to the parent node, that was triggered by a child node. We can stop event bubbling by using the stopPropagation() function.</p>
+            
+        </section>
+
+        <!-- q5 -->
+        <section class="bg-white rounded-xl h-full px-6 py-6 mb-4">
+            <div class="pb-2 dashed-border mb-3">
+                <h2 class="text-xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            </div>
+            <p class="font-light text-gray-600">
+                To create an element we use createElement(). Example: const title = document.createElement("h1") <br>
+                To add an element to a parent node we use appendChild(). Example: document.body.appendChild(title) <br>
+                To remove an element we use remove(). Example: title.remove()
+            </p>
+
+        </section>
+    </section>
+    
+    <script src="script/qna.js"></script>
+    
+    
+</body>
+</html>
+
+
+<!-- Question-1: What are the different ways to select an element in the DOM?
+
+Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+Question-3: What is event delegation in the DOM?
+
+Question-4: What is event bubbling in the DOM?
+
+Question-5: How do you create, add, and remove elements using JavaScript?
+
+ -->
+
+
+
+
+

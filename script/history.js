@@ -4,8 +4,14 @@ function addToHistory(taskTitle){
 
     let now = new Date();
     let hours = now.getHours();
-    if(hours<12){
+    if(hours<12 && hours>0){
         hours = hours;
+        mins = now.getMinutes();
+        seconds = now.getSeconds()+" AM";
+    }
+    else if(hours==0)
+    {
+        hours = 12;
         mins = now.getMinutes();
         seconds = now.getSeconds()+" AM";
     }
