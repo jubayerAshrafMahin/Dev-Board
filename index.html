@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Dev Board|Home</title>
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-100" id="body">
     <section class="max-w-[1380px] mx-auto px-4 py-4">
         <!-- header devBoard -->
         <header class="mb-4">
@@ -23,10 +23,10 @@
                 <div class="flex gap-6 items-center">
                     <div class="flex items-center gap-1 px-3 py-1 bg-slate-100 rounded-2xl">
                         <img src="assets/checkbox.png" alt="checkbox">
-                        <h2 id="task-completed" class="text-black text-2xl font-bold">23</h2>
+                        <h2 id="tasks-completed" class="text-black text-2xl font-bold">23</h2>
                     </div>
                     <!-- theme button -->
-                    <div class="p-2 rounded-full bg-slate-100 hover:cursor-pointer hover:bg-slate-200">
+                    <div class="p-2 rounded-full bg-slate-100 hover:cursor-pointer hover:bg-slate-200" id="theme-btn">
                         <img src="assets/theme-btn.png" alt="theme button">
                     </div>
                 </div>
@@ -42,12 +42,12 @@
                     <img src="assets/checkbox.png" alt="checkbox" class="w-6">
                     <div>
                         <p class="text-sm text-gray-500">Task Assigned</p>
-                        <h2 class="text-[22px] font-bold">06</h2>
+                        <h2 class="text-[22px] font-bold" id="tasks-remaining">06</h2>
                     </div>
                 </div>
 
                 <!-- Discover new card -->
-                <div class="flex items-center rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-300 p-4 justify-center hover:cursor-pointer">
+                <div class="flex items-center rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-300 p-4 justify-center hover:cursor-pointer" id="something-new">
                     <img src="assets/board.png" alt="calender">
                     <p class="text-white text-xl">Discover Something New Today!</p>
                 </div>
@@ -55,14 +55,14 @@
                 <div class="bg-slate-100 rounded-lg flex items-center justify-center gap-5">
                     <img src="assets/calender.png" alt="checkbox" class="w-6">
                     <div>
-                        <p class=" text-gray-500">Wed,</p>
-                        <h2 class="font-bold">Jul 28, 2025</h2>
+                        <p class=" text-gray-500" id="day">Wed</p>
+                        <h2 class="font-bold" id="date">Jul 28, 2025</h2>
                     </div>
                 </div>
             </div>
 
-            <!-- tasks section -->
-            <section class="mt-4 grid grid-cols-3 gap-4">
+            <!-- tasks container -->
+            <section class="mt-4 grid grid-cols-3 gap-4" id="tasks-container">
                 <!-- card1 -->
                  <div class="bg-slate-100 p-5 rounded-lg">
                     <div class="dashed-border mb-4">
@@ -75,7 +75,7 @@
                                 <p class="text-xs text-gray-500">Deadline</p>
                                 <p class="text-sm">21 March 2025</p>
                             </div>
-                        <button disabled class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
+                        <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Completed</button>
                     </div>
         
                  </div>
@@ -171,8 +171,8 @@
                 <img src="assets/activity.png" alt="activity">
                 <h2 class="text-lg">Activity Log</h2>
             </div>
-            <div class="flex justify-center">
-                <button class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Clear History</button>
+            <div class="flex justify-center pb-3 dashed-border mb-4">
+                <button id="clear-history-btn" class="bg-accent px-4 py-2 text-white rounded-lg hover:cursor-pointer hover:bg-[#586eff]">Clear History</button>
             </div>
             <div id="history-container">
 
@@ -183,7 +183,10 @@
 
     </section>
 
-    
+    <script src="script/home.js"></script>
+    <script src="script/qna.js"></script>
+    <script src="script/history.js"></script>
+    <script src="script/themeToggler.js"></script>
     
 </body>
 </html>
